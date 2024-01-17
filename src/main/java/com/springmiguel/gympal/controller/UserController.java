@@ -21,6 +21,7 @@ public class UserController {
 
     @GetMapping("/users")
     public List<User> allUsers() {
-        return userService.allUsers();
+        System.out.println("In all users endpoint");
+        return userService.listUsers();
     }
 }
